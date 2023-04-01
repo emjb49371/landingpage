@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinBrille</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav> 
+        <!--Header-->
+        <div class="logo">DinBrille.dk</div>
+
+        <!-- toggle menu button-->
+        <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+        <!--Nav bar-->
+        <div class="navLinks">
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Designs</a></li>
+                <li><a href="#">Omkring os</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <button type="button">Login</button>
+            </ul>
+        </div>
+    </nav>
+    <!---responsive side nav bar-->
+    <div class="sideNav" id="sidenav">
+        <a href="#" class="clodeBtn" onclick="closeNav()">&#10006;</a>
+        <a href="#">Hjem</a>
+        <a href="#">Designs</a>
+        <a href="#">Omkring os</a>
+        <a href="#">Kontakt</a>
+        <a href="#"><button type="button">Login</button></a>
+    </div>
+
+    <!--Main/aside indhold - med banner billede-->
+    <div class="row">
+        <div class="column1">
+            <h1>Håndlavet, personligt & elegant </h1>
+            <p>Skrædersyet solbriller i firkantet design, men prisen er individuel, ligesom dig! </p>
+            <button>Køb nu!</button>
+        </div>
+        <div class="column2">
+            <img src="./img/solbrille.png" alt="Solbrille" width="500px">
+        </div>
+    </div>
+
+    <!--simpel JS for side menu-->
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0%";
+        }
+    </script>
+
+
+
+</body>
+</html>

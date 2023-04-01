@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+html,
+
+/* Hele html filens definationer*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* styling af body*/
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/*styling af nav bar*/
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 10%;
+}
+
+nav .logo{
+    font-size: 30px;
+    font-weight: 700;
+    /*background-image: url(logo.png);*/
+}
+
+/* styling af nav bar*/
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* style a buttom i nav menu*/
+
+nav .navLinks button {
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: rgb(70, 181, 245);
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+nav ul li:hover{
+    background-color:#FFCC70;
+}
+
+/*Styling af burger menu*/
+nav .menubtn {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive navbar css */
+
+@media screen and (max-width: 600px) {
+    nav .menubtn {
+        display: flex;
+    }
+
+    nav .navLinks{
+        display: none;
+    }
+
+    .sideNav {
+        display: block !important;
+    }
+}
+
+/*Side bar styling*/
+.sideNav{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: #4158D0;
+    overflow-x: hidden;
+    transition: 0.3 ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+
+/*Side nav styling*/
+.sideNav a{
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    color: #fae469;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNav a button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+.sideNav a:hover {
+    color: rgb(68, 223, 250);
+}
+
+.sideNav .clodeBtn{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+.row .column1 {
+    padding-right: 50px;
+}
+.column1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.column1 p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.column1 button {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: rgb(70, 181, 245);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Header content responsive*/
+@media screen and (max-width: 900px) {
+    .column2 img {
+        width: 350px;
+    }
+    .column1 h1 {
+        font-size: 40px;
+    }
+    .column1 p {
+        font-size: 17px;
+    }
+    .row {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .column1 h1 {
+        font-size: 35px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    .row .column1 {
+        padding: 30px;
+    }
+
+    
+}
